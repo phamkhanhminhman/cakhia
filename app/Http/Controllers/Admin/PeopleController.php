@@ -14,4 +14,16 @@ class PeopleController extends Controller
     	
     	return view('/admin/people/people',compact('people'));
     }
+
+    public function create() 
+    {
+    	return view('/admin/people/people-create');
+    }
+
+    public function show($id)
+    {
+    	$person = DB::table('people')->where('id', $id)->get();
+
+    	return view('/admin/people/people-edit', compact('person'));
+    }
 }

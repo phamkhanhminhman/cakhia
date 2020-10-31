@@ -39,6 +39,12 @@ Route::get('/contact', [ContactController::class, 'index']);
 
 Route::get('/admin', 		[HomeAdmin::class, 'index']);
 Route::get('/admin/people', [PeopleController::class, 'index']);
+Route::post('/admin/people', [PeopleController::class, 'store']);
+Route::put('/admin/people', [PeopleController::class, 'update']);
+Route::get('/admin/people/create', [PeopleController::class, 'create']);
+Route::get('/admin/people/edit/{id}', [PeopleController::class, 'show']);
+
+
 
 
 

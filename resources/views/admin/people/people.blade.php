@@ -20,8 +20,7 @@
     <div class="padding">
       <div class="box">
         <div class="box-header">
-          <h2>Footable</h2>
-          <small>Make HTML tables on smaller devices look awesome</small>
+          <a href="{{url('admin/people/create')}}"><button class="btn-sm btn-primary">Add</button></a>
         </div>
         <div class="box-body">
           Search: <input id="filter" type="text" class="form-control input-sm w-auto inline m-r"/>
@@ -56,7 +55,7 @@
                 <td>Traffic Court Referee</td>
                 <td data-value="78025368997">{{$p->group}}</td>
                 <td data-value="1"><span class="label success" title="Active">Active</span></td>
-                <td><a href=""><button class="btn-sm btn-primary">Edit</button></a></td>
+                <td><a href="{{url('admin/people/edit',$p->id)}}"><button class="btn-sm btn-warning">Edit</button></a></td>
               </tr>
               @endforeach
             </tbody>

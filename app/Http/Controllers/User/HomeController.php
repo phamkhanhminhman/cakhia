@@ -10,8 +10,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-    	$albums = DB::table('people')->get();
+        $albums = DB::table('people')->get();
 
-    	return view('/user/home', compact('albums'));
+        return view('/user/home', compact('albums'));
     }
 }

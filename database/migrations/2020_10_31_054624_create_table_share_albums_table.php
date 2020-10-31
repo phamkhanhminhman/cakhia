@@ -17,6 +17,7 @@ class CreateTableShareAlbumsTable extends Migration
             $table->increments('id');
             $table->string('album_id')->unique()->nullable();
             $table->string('title');
+            $table->string('group')->nullable();
             $table->string('thumbnail');
             $table->string('link');
             $table->string('description')->nullable();

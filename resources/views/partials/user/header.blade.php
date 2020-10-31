@@ -4,23 +4,19 @@
     <div class="row align-items-center">
 
       <div class="col-6 col-xl-2" data-aos="fade-down">
-        <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">Photon</a></h1>
+        <h1 class="mb-0"><a href="{{url('/')}}" class="text-black h2 mb-0">Photography</a></h1>
       </div>
       <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
         <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
           <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="{{url('/')}}">Home</a></li>
             <li class="has-children">
               <a href="single.html">Gallery</a>
               <ul class="dropdown">
-                <li><a href="#">Nature</a></li>
-                <li><a href="#">Portrait</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Architecture</a></li>
-                <li><a href="#">Animals</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Travel</a></li>
+                <li><a href="{{url('people')}}">People</a></li>
+                <li><a href="#">CaKhia</a></li>
+                <li><a href="#">DaLat</a></li>
                 <li class="has-children">
                   <a href="#">Sub Menu</a>
                   <ul class="dropdown">
@@ -33,7 +29,7 @@
             </li>
             <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="{{url('contact')}}">Contact</a></li>
           </ul>
         </nav>
       </div>

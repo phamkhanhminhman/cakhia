@@ -4,7 +4,12 @@ use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\TestController;
 use App\Http\Controllers\User\testController;
 use App\Http\Controllers\User\HomeController;
+use App\Http\Controllers\User\GalleryController;
+use App\Http\Controllers\User\ContactController;
 
+
+use App\Http\Controllers\Admin\HomeController as HomeAdmin;
+use App\Http\Controllers\Admin\PeopleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,6 +27,19 @@ Route::get('/', function () {
 
 //USER
 Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/people', [GalleryController::class, 'people']);
+
+Route::get('/contact', [ContactController::class, 'index']);
+
+
+
+
+//ADMIN
+
+Route::get('/admin', 		[HomeAdmin::class, 'index']);
+Route::get('/admin/people', [PeopleController::class, 'index']);
+
 
 
 

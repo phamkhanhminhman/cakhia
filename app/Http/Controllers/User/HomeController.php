@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-    	$albums = DB::table('share_albums')->get();
+    	$albums = DB::table('people')->get();
 
     	return view('/user/home', compact('albums'));
     }

@@ -56,7 +56,7 @@
           <div class="main-menu h-100">
             <nav class="navbar h-100 navbar-expand-lg">
               <!-- Logo Area  -->
-              <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt="Logo"></a>
+              <a class="navbar-brand" href="{{url('/')}}"><img src="img/core-img/logo.png" alt="Logo"></a>
 
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#studioMenu" aria-controls="studioMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i> Menu</button>
 
@@ -69,16 +69,16 @@
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="index.html">People</a>
-                      <a class="dropdown-item" href="about-me.html">CaKhia</a>
-                      <a class="dropdown-item" href="portfolio.html">DaLat</a>
+                      <a class="dropdown-item" href="{{url('/')}}">People</a>
+                      <a class="dropdown-item" href="#">CaKhia</a>
+                      <a class="dropdown-item" href="#">DaLat</a>
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about-me.html">About</a>
+                    <a class="nav-link" href="#">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Contact</a>
+                    <a class="nav-link" href="{{url('/contact')}}">Contact</a>
                   </li>
                 </ul>
                 <!-- Search Form -->

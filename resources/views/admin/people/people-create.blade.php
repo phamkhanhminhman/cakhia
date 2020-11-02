@@ -24,7 +24,7 @@
 
 			<div class="row">
 				<div class="col-sm-6 offset-sm-3">
-					<form action="{{url('admin/people-insert')}}" method="post" enctype="multipart/form-data" data-ui-jp="parsley">
+					<form action="{{url('admin/people-store')}}" method="post" enctype="multipart/form-data" data-ui-jp="parsley">
 						@csrf
 						<div class="box">
 							<div class="box-header">
@@ -33,7 +33,7 @@
 							<div class="box-body">
 								<p class="text-muted">Please fill the information to continue</p>
 								<div class="">
-									<select required class="form-control c-select m-y">
+									<select required class="form-control c-select m-y" name="group">
 										<option value="">Please choose Group</option>
 										<option value="1">1</option>
 										<option value="2">2</option>

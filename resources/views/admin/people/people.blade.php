@@ -36,7 +36,10 @@
                   Name
                 </th>
                 <th data-hide="phone,tablet">
-                  
+                  Upload
+                </th>
+                <th data-hide="phone,tablet">
+                  Link
                 </th>
                 <th data-hide="phone,tablet" data-name="Date Of Birth">
                   Group
@@ -52,7 +55,8 @@
               <tr>
                 <td>{{$p->id}}</td>
                 <td><a href="#">{{$p->name}}</a></td>
-                <td>Traffic Court Referee</td>
+                <td>{{$p->thumbnail}}</td>
+                <td>{{$p->link}}</td>
                 <td data-value="78025368997">{{$p->group}}</td>
                 <td data-value="1"><span class="label success" title="Active">Active</span></td>
                 <td><a href="{{url('admin/people/edit',$p->id)}}"><button class="btn-sm btn-warning">Edit</button></a></td>

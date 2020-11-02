@@ -33,24 +33,27 @@
 							</div>
 							<div class="box-body">
 								<p class="text-muted">Please fill the information to continue</p>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="id" value="{{$p->id}}" hidden>
+                </div>
                 <div class="">
-                  <select required class="form-control c-select m-y">
+                  <select class="form-control c-select m-y" disabled>
                     <!-- <option value="">Please choose Group</option> -->
                     <option value="">{{$p->group}}</option>
                   </select>
                 </div>
 								<div class="form-group">
 									<label>Username</label>
-									<input type="text" class="form-control" value="{{$p->name}}" required>
+									<input type="text" class="form-control" name="name" value="{{$p->name}}" required>
 								</div>
                 
 								<div class="form-group">
 									<label>Link</label>
-									<input type="text" class="form-control" value="{{$p->link}}"required>
+									<input type="text" class="form-control" name="link" value="{{$p->link}}"required>
 								</div>
 								<div class="form-group">
                   <label for="">Image</label>
-                  <input type="file"  name="thumbnail" class="form-control">
+                  <input type="file"  name="thumbnail" name="thumbnail" class="form-control">
                   <!-- <input  type="hidden" name="anhcu" value="{{$p->thumbnail}}"> -->
                 </div>
 

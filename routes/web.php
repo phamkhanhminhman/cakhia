@@ -38,12 +38,13 @@ Route::get('/contact', [ContactController::class, 'index']);
 //ADMIN
 
 Route::get('/admin', 		[HomeAdmin::class, 'index']);
-Route::get('/admin/people', [PeopleController::class, 'index']);
+
+Route::get('/admin/people',  [PeopleController::class, 'index']);
 Route::post('/admin/people', [PeopleController::class, 'store']);
-Route::post('/admin/people-update', [PeopleController::class, 'update']);
-Route::post('/admin/people-store', [PeopleController::class, 'store']);
 Route::get('/admin/people/create', [PeopleController::class, 'create']);
+Route::post('/admin/people-store', [PeopleController::class, 'store']);
 Route::get('/admin/people/edit/{id}', [PeopleController::class, 'show']);
+Route::post('/admin/people-update',   [PeopleController::class, 'update']);
 
 
 
